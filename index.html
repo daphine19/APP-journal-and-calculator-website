@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/app.css">
+    <title>APP Assignment</title>
+
+</head>
+    <!-- Navbar -->
+    <div>
+        <div id="home"><b>Application of Programming Principles</b></div>
+        <!-- navbar links -->
+        <div id="navbar">
+            <ul>
+                <li><a href = "#about">ABOUT</a></li>
+                <li><a href = "#calculator">CALCULATOR</a></li>
+                <li><a href = "#journal">JOURNAL</a></li>
+                <li><a href = "#thoughts">THOUGHTS</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+<!-- Header-->
+    <header>
+        <div class="icebreaker">
+            <p>Learn more and start today</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div id="about">
+        <h3 class="titles" >About APP</h3>
+        <p class ="semiHeading">Key features of the assignment</p>
+
+
+        <div class="container">
+        <div class="aboutHeading">
+            <p class="heading">Calculator</p>
+            <p class = content>This part of the website allows a user carry out basic calculation ie addition, subtraction, multiplication and division. This can be  done both via the server and client side. </p>
+        </div>
+
+        <div class="aboutHeading">
+          <p class="heading">Journal</p>
+          <p class = content>Displays a list of journal entries that were stored in a json file. And if a user clicks on that entry it is seen under the selected entry part. Furthermore, the user can delete an entry and also add one to the list. finally the list can be uploaded to the server via the upload button.</p>
+        </div>
+
+        <div class="aboutHeading">
+          <p class="heading">Design</p>
+          <p class = content>The design was inspired by aesthetic colour combination and a some knowledge from various platforms. Completing this section was backed up with PARC(Proximity, Alignment, Repetition, Contrast) knowledge  </p>
+        </div>
+
+        <div class="aboutHeading">
+          <p class="heading">Thoughts</p>
+          <p class = content>Works similarly like the journal section though intended mainly for the page designer. the only addition is that it displays the thought on the page each time the generate thought button is clicked. </p>
+        </div>
+
+    </div>
+    </div>
+
+<!-- Calculator Section -->
+ <div id="calculator">
+      <h3 class="titles">Calculator</h3>
+      <p class ="semiHeading">The one that runs the sums</p>
+       <table>
+           <tr>
+           <td><div>
+               <h3 class="smallHeadings">Add</h3>
+             <input type="number" id="add1"/> + <input type="number" id="add2"/> = <input type="text" id="inputAdd"/>
+             <p><button class="button" id="btnAdd" onclick="addNumbers()">Add</button></p>
+             <p><button class="button" id="btnAddAPI">Add via API</button></p>
+           </div></td>
+
+        <td><div>
+            <h3 class="smallHeadings">Subtract</h3>
+            <input type="number" id="sub1"/> - <input type="number" id="sub2"/> = <input type="text" id="inputSubtract"/>
+            <p><button class="button" id="btnSubtract">Subtract</button></p>
+            <p><button class="button" id="btnSubtractAPI"> Subtract via API</button></p>
+        </div></td>
+
+         <td><div>
+            <h3 class="smallHeadings">Multiply</h3>
+            <input type="number" id="multi1"/> x <input type="number" id="multi2"/> = <input type="text" id="inputMultiply"/>
+            <p><button class="button" id="btnMultiply">Multiply</button></p>
+            <p><button class="button" id="btnMultiplyAPI">Multiply via API</button></p>
+        </div></td>
+
+        <td><div>
+          <h3 class="smallHeadings">Divide</h3>
+            <input type="number" id="divi1"/> / <input type="number" id="divi2"/> = <input type="text" id="inputDivide"/>
+            <p><button class="button" id="btnDivide">Divide</button></p>
+            <p><button class="button" id="btnDivideAPI">Divide via API</button></p>
+        </div></td>
+           </tr>
+       </table>
+ </div>
+
+    <!-- Journal Section -->
+  <div id="journal">
+        <h3 class="titles">Journal</h3>
+        <p class ="semiHeading">What I've done</p>
+
+      <div id = journalEntries>
+           <h3 class="smallHeadings">Journal Entries</h3>
+            <ol id="listEntries">
+                <li>item 1</li>
+                <li>item 2</li>
+            </ol>
+
+         <div>
+            <button id="btnUploadJournal">upload journal</button>
+         </div>
+      </div>
+
+    <div id="journalItem" >
+        <h3 class="smallHeadings">Selected Entry</h3>
+        <div>
+            <label for="idEntry">ID: </label>
+            <input type="text" id="idEntry">
+            <label for="dateEntry">Date: </label>
+            <input type="text" id="dateEntry">
+            <label for="namEntry">Status of Tasks: </label>
+            <textarea id="namEntry" name="namEntry" rows="2" cols="50" ></textarea>
+            <label for="txtNote">Reflection: </label>
+            <textarea id="txtNote" name="txtNote" rows="4" cols="50" ></textarea>
+        </div>
+        <div>
+          <button id="btnDeleteEntry">Delete</button>
+        </div>
+    </div>
+
+    <div id="addItem" >
+         <h3 class="smallHeadings">Add Entry</h3>
+        <div>
+            <label for="idAdd">ID:</label>
+            <input type="text" id="idAdd" required>
+            <label for="dateAdd">Date: </label>
+            <input type="text" id="dateAdd" required>
+            <label for="nameAdd">Status of tasks: </label>
+            <textarea id="nameAdd" name="nameAdd" rows="2" cols="50" ></textarea>
+            <label for="txtAdd">Reflection: </label>
+            <textarea id="txtAdd" name="txtAdd" rows="4" cols="50" required></textarea>
+        </div>
+        <div>
+            <button id="btnAddEntry">Add</button>
+        </div>
+    </div>
+  </div>
+
+
+    <!-- Thoughts of the day -->
+ <div id="thoughts">
+        <h3 class="titles">Thoughts</h3>
+        <p class ="semiHeading">My Thoughts of the day</p>
+
+        <div id="thoughtsList">
+           <h3 class="smallHeadings">Thought Entries</h3>
+            <ol id="thoughtEntries">
+                <li>item 1</li>
+                <li>item 2</li>
+            </ol>
+        <div>
+            <button class="button" id="btnUploadThoughts">upload thoughts</button>
+        </div>
+        </div>
+    <div id="thoughtItem" >
+        <h3 class="smallHeadings">Selected Entry</h3>
+        <div>
+            <label for="idThoughtEntry">ID: </label>
+            <input type="text" id="idThoughtEntry">
+            <label for="nameThoughtEntry">Thought: </label>
+            <textarea id="nameThoughtEntry" name="nameThoughtEntry" rows="4" cols="50" ></textarea>
+        </div>
+        <div>
+           <button class="button" id="btnDeleteThought">Delete</button>
+        </div>
+    </div>
+
+    <div id="addThought" >
+        <h3 class="smallHeadings">Add Entry</h3>
+        <div>
+            <label for="idAddThought">ID:</label>
+            <input type="text" id="idAddThought" required>
+            <label for="nameAddThought">Thought: </label>
+            <textarea id="nameAddThought" name="nameAddThought" rows="4" cols="50" ></textarea>
+        </div>
+        <div>
+            <button id="btnAddThought">Add</button>
+        </div>
+    </div>
+</div>
+
+
+    <div id="display">
+        <p id= "thoughtDisplay"></p>
+        <button class="displayButton" onclick="randomGenerator()">Generate thought</button>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="top" >
+      <a href="#home">To the top</a>
+    </footer>
+
+
+<script src="static/scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+	"journals": [{
+		"name": "Completed",
+		"note": "Finished all the tasks since they were pretty doable and straight forward.",
+		"date": "01/02/2021"
+	}, {
+		"name": "Completed",
+		"note": "Finished most of the python tasks though still have a bit of issues with how to use loops",
+		"date": "09/02/2021"
+	}, {
+		"name": "Completed and tested tasks",
+		"note": "Completed tasks and found it easier to finish the tasks prior to the lab so that I can complete all my failed tasks then and also tried using \u201c use strict \u201cmethod.",
+		"date": "15/02/20`21"
+	}, {
+		"name": "Completed and all tests passed ",
+		"note": "Completed tasks following the same technique as last time also learnt that its better to use object literal than new like in java.",
+		"date": "22/02/2021"
+	}, {
+		"name": "Completed majority ",
+		"note": "Completed the tasks went through all the tasks with the help of w3 schools and also the lab demonstrator ",
+		"date": "01/03/2021"
+	}, {
+		"name": "Completed and passed all tests ",
+		"note": " Completed at the end of the week and got help from you tube as well. Learnt that the URL in the web browser is the part that comes on the flask first line(@app.route(\u2018/\u2019))",
+		"date": "08/03/2021"
+	}, {
+		"name": "Completed and majority of the tests ",
+		"note": " Completed all the tasks by the end of the week and also managed to redesign the page whilst following PARC rules.",
+		"date": "15/03/2021"
+	}, {
+		"name": "Started on the calculator tasks ",
+		"note": "Started doing some of the work and managed to finish the first bit properly and started on the one with the api.",
+		"date": "22/03/2021"
+	}, {
+		"name": "Completed the calculator via the break and started on the journal tasks",
+		"note": "with help from various labs i was able to correct and complete the journal tasks and start doing the css part.",
+		"date": "19/04/2021"
+	}]
+}

@@ -1,0 +1,342 @@
+/*whole page design */
+
+body{
+
+   background-image: url("/static/image/journal.JPG");
+}
+
+#about{
+    background-color:whitesmoke;
+    margin-top: 20px;
+
+}
+
+#calculator{
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+
+#thoughts{
+    background-color: whitesmoke;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#journal{
+    background-color:whitesmoke;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+#display{
+    background-color: #dadeee ;
+    text-align: center;
+}
+
+
+/*heading design*/
+#home {
+    text-align: center;
+    color: #535353;
+    font-family: "Roboto",sans-serif;
+    font-size: 40px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+
+/* navbar design */
+#navbar ul{
+    list-style: none;
+    background-color:#dadeee ;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    font-family: Arial;
+    color: #b39470;
+    padding:25px 20px;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+
+/*ice breaker */
+.icebreaker p {
+    color: #535353;
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 48px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+
+/* semi headings */
+.semiHeading{
+    text-align: center;
+    font-family: monospace;
+    color: #BA5D7E;
+    font-size: 20px;
+}
+
+/* about design */
+.container{
+    padding: 10px;
+    background-color: #dadeee;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.aboutHeading{
+    width: 250px;
+    height: 300px;
+    background-color: whitesmoke;
+    float: left;
+    margin: 0px 10px;
+    transition: 1s;
+}
+
+.aboutHeading:hover{
+    transform: scale(1.3);
+    background-color: #dadeee;
+    box-shadow: 2px 2px 2px #dadeee;
+    z-index: 2;
+}
+.heading{
+    color: #BA5D7E;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+.content{
+    text-align: center;
+    font-family: Arial;
+    color: #51484c;
+    font-size: medium;
+    padding: 10px;
+
+}
+@media screen and (max-width: 1200px){
+    .container{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px){
+    .container{
+        width: 90%;
+    }
+}
+
+
+/* titles */
+.titles{
+    color: #9c97c9;
+    font-family: arial;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px auto;
+    max-width: 600px;
+}
+
+
+/* calculator design */
+.button {
+    border: solid #dadeee ;
+    border-radius: 10px;
+    color: #BA5D7E;
+    background-color: #dadeee;
+    font-weight: bold;
+}
+.smallHeadings{
+    color: #BA5D7E;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#calculator table td{
+    border: 3px solid #dadeee;
+    border-radius: 20px;
+    padding: 15px;
+
+}
+
+#calculator table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+input{
+    border-radius: 5px;
+    border:2px solid #999b9d;
+
+}
+@media (max-width: 1200px){
+    #calculator table{
+        display: block;
+        width: 40%;
+    }
+}
+
+/* journal design */
+textarea {
+    border-radius: 5px;
+    border: 2px solid #999b9d;
+}
+
+#listEntries{
+    color: black;
+    font-family: Arial;
+}
+label{
+    color: #51484c;
+    font-family: Arial;
+    text-align: center;
+}
+
+#journal button{
+    border: solid #dadeee ;
+    border-radius: 10px;
+    color: #BA5D7E;
+    background-color: #dadeee;
+    font-weight: bold;
+
+
+}
+
+#journalEntries{
+    border-radius: 5px;
+    border: 2px solid #dadeee;
+    margin: 0 auto;
+
+
+
+}
+#journalItem{
+    border: 2px solid #dadeee;
+    border-radius: 5px;
+     margin: 0 auto;
+
+}
+#addItem{
+    border: 2px solid #dadeee;
+    border-radius: 5px;
+     margin: 0 auto;
+}
+textarea{
+    padding: 10px;
+}
+
+
+
+label{
+    display: inline-block;
+     text-align: center;
+    margin-top: 10px;
+
+}
+input{
+    display: block;
+}
+
+/* thoughts design */
+#thoughtEntries{
+    color: #51484c;
+    font-family: Arial;
+}
+
+
+label{
+    color: #51484c;
+    font-family: Arial;
+    text-align: center;
+}
+
+#thoughts button{
+    border: solid #dadeee ;
+    border-radius: 10px;
+    color: #BA5D7E;
+    background-color: #dadeee;
+    font-weight: bold;
+    text-align: center;
+}
+
+#thoughtsList{
+    border: 2px solid #dadeee;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+#thoughtItem{
+    border: 2px solid #dadeee;
+    border-radius: 5px;
+     margin: 0 auto;
+
+}
+#addThought{
+    border: 2px solid #dadeee;
+    border-radius: 5px;
+     margin: 10px auto;
+}
+
+
+
+/* thought display design */
+#thoughtDisplay{
+
+    color: #535353;
+    font-family: 'Rouge Script', cursive;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 48px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ffffff;
+
+}
+.displayButton{
+    background-color: #51484c;
+    color: #fffadf;
+    border: solid #51484c ;
+    border-radius: 10px;
+
+}
+#background{
+    padding: 3rem;
+    float: right;
+    top: 25%;
+    left: 27%;
+}
+
+/*footer design */
+#top{
+    text-decoration: none;
+    font-family: Arial;
+    color: #b39470;
+    font-weight: bold;
+}
+
+
+
