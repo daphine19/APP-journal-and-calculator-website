@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Daphine
-- 👀 I’m interested in technology,business and cooking..
+- 👀 I’m interested in technology,business IT and cooking..
 - 🌱 I’m currently learning Business Information Technology...
 - 💞️ I’m looking to collaborate on web development projects
 - 📫 How to reach me email- daphinebelindah@gmail.com or phone- 0754330920
